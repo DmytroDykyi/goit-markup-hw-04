@@ -45,6 +45,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -76,6 +78,12 @@ body {
   margin-right: 76px;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -86,10 +94,9 @@ body {
   padding: 24px 0;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.contacts {
+  font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list {
@@ -98,18 +105,13 @@ body {
   gap: 40px;
 }
 
-.contacts {
-  font-style: normal;
-  margin-left: auto;
-}
-
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  display: block;
-  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -123,21 +125,17 @@ body {
 
 .main-content {
   background-color: #2e2f42;
+}
+
+.main-content-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 48px;
-  padding: 188px 0;
-}
-
-.main-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
-  max-width: 496px;
+  gap: 48px;
+  padding: 188px;
+  max-width: 1158px;
 }
 
 .button-order {
@@ -156,6 +154,15 @@ body {
   height: 56px;
   border: none;
   border-radius: 4px;
+}
+
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
 }
 
 .button-order:hover,
@@ -205,6 +212,18 @@ body {
   letter-spacing: 0.02em;
 }
 
+.benefits-icons {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -244,7 +263,7 @@ body {
 
 .team-list-item {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  padding: 32px 16px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -256,7 +275,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  padding: 32px 0;
+  padding: 32px 0 0;
 }
 
 .team-list-names {
@@ -276,13 +295,33 @@ body {
   text-align: center;
 }
 
+.team-contacts-messengers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  padding: 8px;
+  list-style: none;
+  margin: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+.instagram-worker,
+.twitter-worker,
+.facebook-worker,
+.linkedin-worker {
+  fill: #4d5ae5;
+}
+
 .portfolio {
   padding: 120px 0;
 }
 
 .portfolio-title {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
@@ -333,11 +372,23 @@ body {
 
 .page-footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  padding: 100px 120px;
+  margin: 0;
+  max-width: 1158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
 }
 
 .footer-logo {
-  margin-bottom: 16px;
   display: inline-block;
 }
 
@@ -350,4 +401,45 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+}
+
+.footer-social-media {
+  padding: 100px;
+  margin: 0;
+  max-width: 1158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+}
+
+.footer-social-media-text {
+  font: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.company-contacts-messengers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+.instagram-company,
+.twitter-company,
+.facebook-company,
+.linkedin-company {
+  fill: #4d5ae5;
 }
