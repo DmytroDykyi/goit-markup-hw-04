@@ -97,7 +97,6 @@ body {
   align-items: center;
   gap: 40px;
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -111,6 +110,11 @@ body {
   position: relative;
 }
 
+.nav-item {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
+}
+
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -120,7 +124,6 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -130,6 +133,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -340,6 +344,9 @@ body {
   margin: 0;
   line-height: 0;
   width: 100%;
+}
+
+.team-contacts-messengers-item {
   width: 40px;
   height: 40px;
 }
@@ -427,7 +434,7 @@ body {
   overflow: hidden;
 }
 
-.portfolio-img-text .portfolio-list-item-text {
+.portfolio-img-text {
   position: absolute;
   top: 0;
   font-size: 16px;
