@@ -380,8 +380,6 @@ body {
 
 .portfolio-container {
   padding: 120px 0;
-  width: 100%;
-  height: auto;
 }
 
 .portfolio-title {
@@ -431,13 +429,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 360px;
-  height: auto;
 }
 
 .portfolio-list-item-text {
-  width: 360px;
-  height: 427px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -448,11 +442,6 @@ body {
   gap: 8px;
   position: relative;
   overflow: hidden;
-}
-
-.portfolio-img {
-  width: 360px;
-  height: 300px;
 }
 
 .portfolio-img-text {
