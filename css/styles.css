@@ -57,8 +57,12 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav:hover {
+  color: #404bbf;
 }
 
 .logo {
@@ -373,8 +377,8 @@ body {
 
 .portfolio-container {
   padding: 120px 0;
-  width: 264px;
-  height: 428px;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-title {
@@ -384,7 +388,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding: 120px auto 85px;
+  padding: 120px 0 85px;
   margin-bottom: 72px;
 }
 
@@ -407,7 +411,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item-text:hover {
+.portfolio-item:hover .portfolio-img-text {
   transform: translateY(0%);
 }
 
@@ -543,8 +547,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-contacts-messengers-link:hover,
 .company-contacts-messengers-link:focus {
+  background-color: #31d0aa;
+}
+
+.company-contacts-messengers-link:hover {
   background-color: #31d0aa;
 }
 
