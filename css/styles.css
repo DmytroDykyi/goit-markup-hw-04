@@ -432,6 +432,8 @@ body {
 }
 
 .portfolio-list-item-text {
+  width: 360px;
+  height: 427px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
