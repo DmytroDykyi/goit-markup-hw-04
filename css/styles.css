@@ -305,6 +305,10 @@ body {
   background: #fff;
 }
 
+.team-list-item-text {
+  padding: 32px 0;
+}
+
 .team-list-names {
   font-weight: 500;
   font-size: 20px;
@@ -444,7 +448,6 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  padding: 32px 0;
 }
 
 .footer-logo-text {
