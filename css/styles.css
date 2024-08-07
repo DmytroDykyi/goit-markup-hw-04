@@ -101,7 +101,7 @@ body {
 }
 
 .nav-link::after {
-  content: " ";
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -444,6 +444,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  padding: 32px 0;
 }
 
 .footer-logo-text {
